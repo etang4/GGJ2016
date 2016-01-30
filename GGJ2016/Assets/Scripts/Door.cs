@@ -5,7 +5,7 @@ public class Door : MonoBehaviour {
 	public Transform startingPoint;
 	public Transform stoppingPoint;
 	public float speed;
-	bool OpenDoor = false;
+	bool OpenDoor = true;
 
 	void Update () {
 		float step = speed * Time.deltaTime;
