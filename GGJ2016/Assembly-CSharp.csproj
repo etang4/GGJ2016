@@ -45,7 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\Eric&apos;s Level\GameManagerEricLevel.cs" />
+     <Compile Include="Assets\Eric&apos;s Level\Level3Door1.cs" />
+     <Compile Include="Assets\Eric&apos;s Level\Level3Door2.cs" />
      <Compile Include="Assets\Eric&apos;s Level\Rotator.cs" />
      <Compile Include="Assets\Eric&apos;s Test\StareTrigger.cs" />
      <Compile Include="Assets\Eric&apos;s Test\TestScript.cs" />
@@ -84,7 +87,10 @@
      <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\ChangeTextureOnPresenceChanged.cs" />
      <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\UserPresenceTitleGui.cs" />
      <Compile Include="Assets\Scripts\BeaconScript.cs" />
+     <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\Mushroom.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\EyeXDemos\Skybox.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
