@@ -4,6 +4,7 @@ using System.Collections;
 public class Mushroom : MonoBehaviour {
 	public bool TimeToMove;
 	public Transform floatingPosition;
+	public BeaconScriptModified gameManager;
 	// Use this for initialization
 	Vector3 firstPosition;
 	Vector3 secondPosition;
@@ -20,7 +21,11 @@ public class Mushroom : MonoBehaviour {
 		thirdPosition = new Vector3 (255, 1, 224);
 
 	}
-	
+
+	void EyeActivated () {
+		TimeToMove = true;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		float step = speed * Time.deltaTime;
@@ -48,12 +53,7 @@ public class Mushroom : MonoBehaviour {
 		if (transform.position == thirdPosition) {
 			Debug.Log ("third position done.");
 			thirdPositionDone = true;
+			gameManager.isMoving = true;
 		}
-	}
-
-
-
-	void EyeActivated () {
-		TimeToMove = true;
 	}
 }

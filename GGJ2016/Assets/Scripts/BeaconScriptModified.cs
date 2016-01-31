@@ -6,9 +6,6 @@ public class BeaconScriptModified : MonoBehaviour {
     public bool isFacing;
     public bool isMoving;
 
-	bool firstMoveDone = false;
-	bool secondMoveDone = false;
-
         // Use this for initialization
 	void Start () {
         isFacing = false;
@@ -20,9 +17,9 @@ public class BeaconScriptModified : MonoBehaviour {
 	    
 	}
 
-	//void EyeActivated () {
-	//	isMoving = true;
-	//}
+	void EyeActivated () {
+		isMoving = true;
+	}
 
     public bool getIsFacing() 
     {
