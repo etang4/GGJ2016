@@ -24,8 +24,10 @@ public class PlayerController : MonoBehaviour {
 	public Vector3 target2;
 	public GameObject[] Beacons2;
     
-    
-    
+	public AudioSource audioSource;
+	public AudioClip firstMovementDone;
+	public AudioClip secondMovementDone;
+	public AudioClip finalMovementStarted;
 
 	bool firstSection = true;
 	bool secondSection = true;
@@ -68,6 +70,8 @@ public class PlayerController : MonoBehaviour {
 				checker.setisMovingToFalse ();
 				Velocity = Vector3.zero;
 				firstSection = false;
+				audioSource.clip = firstMovementDone;
+				audioSource.Play ();
 			}
 
 			GetComponent<Rigidbody> ().velocity = Velocity;
@@ -98,11 +102,14 @@ public class PlayerController : MonoBehaviour {
 				checker.setisMovingToFalse ();
 				Velocity = Vector3.zero;
 				secondSection = false;
+				audioSource.clip = secondMovementDone;
+				audioSource.Play ();
 			}
 
 			GetComponent<Rigidbody> ().velocity = Velocity;
 		}
 		else {
+			playLeavingSound ();
 			if (checker.getIsMoving () == true && curWaypoint1 < numOfWaypoints1) {
 				target1 = Beacons1 [curWaypoint1].transform.position;
 
@@ -137,5 +144,10 @@ public class PlayerController : MonoBehaviour {
 
         
     }
+
+	void playLeavingSound () {
+		audioSource.clip = finalMovementStarted;
+		audioSource.Play ();
+	}
    
 }

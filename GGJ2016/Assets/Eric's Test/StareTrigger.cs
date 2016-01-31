@@ -60,4 +60,5 @@ public class StareTrigger : MonoBehaviour {
         }
         transform.localScale = Vector3.Slerp(NormalScale, LargeScale, _scaleFactor);
     }
+
 }
