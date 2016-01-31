@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TobiiEyeXSdk-Unity-1.6.477/TobiiDemoUnityProject/Assets/EyeXDemos/ActivatableGUI/ActivatableGUIScene.unity
+- path: Assets/Angels Scene/Scene.unity
   isLoaded: 1
   isActive: 1
