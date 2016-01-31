@@ -12,6 +12,7 @@ public class Level3Door1 : MonoBehaviour {
     public bool doneRotating;
     public bool isWalking;
 
+
     private float threshold = 0.2f;
 
 
@@ -26,6 +27,8 @@ public class Level3Door1 : MonoBehaviour {
 	void Update () {
 	    if (triggered)
         {
+            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
             if (!isWalking)
             {
                 Vector3 targetDir = beacons[currentlyWalkingTo].transform.position - player.transform.position;
@@ -34,18 +37,21 @@ public class Level3Door1 : MonoBehaviour {
             }
             else
             {
-                if(Vector3.Distance(beacons[currentlyWalkingTo].transform.position, player.transform.position) < threshold)
+                
+                if (Vector3.Distance(player.transform.position, beacons[currentlyWalkingTo].transform.position) < threshold)
                 {
                     isWalking = false;
                     currentlyWalkingTo++;
                     if(currentlyWalkingTo >= beacons.Length)
                     {
                         triggered = false;
+                        //Audio Here
+                        //LoadLevel
                     }
                 }
                 else
                 {
-                    Vector3.MoveTowards(player.transform.position, beacons[currentlyWalkingTo].transform.position, speed * Time.deltaTime);
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, beacons[currentlyWalkingTo].transform.position, speed * Time.deltaTime);
                 }
             }
             //check if rotation has stopped

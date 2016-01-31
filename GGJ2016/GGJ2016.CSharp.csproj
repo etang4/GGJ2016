@@ -75,9 +75,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Eric&apos;s Level\GameManagerEricLevel.cs" />
+    <Compile Include="Assets\Eric&apos;s Level\ItemExploding.cs" />
     <Compile Include="Assets\Eric&apos;s Level\Level3Door1.cs" />
     <Compile Include="Assets\Eric&apos;s Level\Level3Door2.cs" />
+    <Compile Include="Assets\Eric&apos;s Level\Level3Door3.cs" />
+    <Compile Include="Assets\Eric&apos;s Level\Level3DoorFinal.cs" />
     <Compile Include="Assets\Eric&apos;s Level\Rotator.cs" />
+    <Compile Include="Assets\Eric&apos;s Level\WindowTrigger.cs" />
     <Compile Include="Assets\Eric&apos;s Test\StareTrigger.cs" />
     <Compile Include="Assets\Eric&apos;s Test\TestScript.cs" />
     <Compile Include="Assets\EyeXDemos\ActivatableGUI\Scripts\ActivatableMenuItems.cs" />
@@ -116,6 +120,7 @@
     <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\UserPresenceTitleGui.cs" />
     <Compile Include="Assets\Scripts\BeaconScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerControllerEric.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Eric&apos;s Level\Wispy Sky\ReadMe.txt" />

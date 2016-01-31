@@ -9,7 +9,7 @@ public class BeaconScript : MonoBehaviour {
         // Use this for initialization
 	void Start () {
         isFacing = false;
-        isMoving = false;
+        isMoving = true;
 	}
 	
 	// Update is called once per frame
