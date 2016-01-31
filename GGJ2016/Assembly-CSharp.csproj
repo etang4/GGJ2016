@@ -86,7 +86,7 @@
      <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\PointVisualizerBase.cs" />
      <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\ChangeTextureOnPresenceChanged.cs" />
      <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\UserPresenceTitleGui.cs" />
-     <Compile Include="Assets\Scripts\BeaconScript.cs" />
+     <Compile Include="Assets\Scripts\BeaconScriptModified.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Mushroom.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />

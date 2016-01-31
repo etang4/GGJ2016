@@ -7,7 +7,6 @@ public class StareTrigger : MonoBehaviour {
 
     private Material defaultMaterial;
     public Material StaredMaterial;
-
     private bool hasLookedAtBefore;
     private bool isStaring;
     private float startTime;
@@ -61,4 +60,5 @@ public class StareTrigger : MonoBehaviour {
         }
         transform.localScale = Vector3.Slerp(NormalScale, LargeScale, _scaleFactor);
     }
+
 }
