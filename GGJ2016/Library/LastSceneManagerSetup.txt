@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Angels Scene/Scene.unity
+- path: Assets/Alex's Stuff/EndingRoom.unity
   isLoaded: 1
   isActive: 1

@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -566,6 +566,51 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1416276761 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 2ecb034f3ede54b968a919fd40decee7, type: 2}
+  m_PrefabInternal: {fileID: 134589349}
+--- !u!114 &1416276766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416276761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872512b7980b64c02bdba2a55a0aa598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
+--- !u!114 &1416276767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416276761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredGameObject: {fileID: 1416276761}
+  StaredMaterial: {fileID: 0}
+  speed: 0.5
+--- !u!114 &1416276768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416276761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af61d29e1c9e76444b7625d256d1e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskType: 0
+  showProjectedBounds: 0
+  delayInMilliseconds: 0
 --- !u!1 &1533054422
 GameObject:
   m_ObjectHideFlags: 0

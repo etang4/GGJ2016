@@ -145,6 +145,7 @@
      <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Alex&apos;s Stuff\CartoonBusinessZombie\ReadMe.txt" />
      <None Include="Assets\Eric&apos;s Level\Wispy Sky\ReadMe.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />

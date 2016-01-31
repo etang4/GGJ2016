@@ -45,6 +45,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\BeaconScript.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\ColorGame.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\Fading.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\FirstBlueEyeActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\FirstRedEyeActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\FirstYellowEyeActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\LevelLoader.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\PathingScript.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\PlayerControllerAlex.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\SecondBlueEyeActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\SecondRedEyeActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\SecondYellowActivated.cs" />
+     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\WaitTime.cs" />
      <Compile Include="Assets\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\Eric&apos;s Level\GameManagerEricLevel.cs" />
      <Compile Include="Assets\Eric&apos;s Level\Level3Door1.cs" />
@@ -90,6 +104,7 @@
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Mushroom.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\TreasureChestActivated.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\EyeXDemos\Skybox.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
@@ -97,6 +112,7 @@
      <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Alex&apos;s Stuff\CartoonBusinessZombie\ReadMe.txt" />
      <None Include="Assets\Eric&apos;s Level\Wispy Sky\ReadMe.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />

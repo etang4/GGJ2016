@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerControllerAlex : MonoBehaviour {
 
     public float Speed;
     public float rotationSpeed;

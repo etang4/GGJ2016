@@ -97,8 +97,8 @@ GameObject:
   - 65: {fileID: 24391921}
   - 23: {fileID: 24391920}
   - 114: {fileID: 24391926}
-  - 114: {fileID: 24391925}
   - 114: {fileID: 24391924}
+  - 114: {fileID: 24391925}
   m_Layer: 0
   m_Name: 1stLevelBlue
   m_TagString: Untagged
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 24391919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredGameObject: {fileID: 24391919}
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 792622736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredGameObject: {fileID: 792622736}
@@ -827,8 +827,8 @@ GameObject:
   - 114: {fileID: 881596937}
   - 54: {fileID: 881596942}
   - 114: {fileID: 881596945}
-  - 114: {fileID: 881596944}
   - 114: {fileID: 881596943}
+  - 114: {fileID: 881596944}
   m_Layer: 0
   m_Name: 2ndLevelRed
   m_TagString: Untagged
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97151874083f9d045834342efcc9226a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checker: {fileID: 0}
+  checker: {fileID: 1283716792}
 --- !u!114 &881596944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 881596936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredGameObject: {fileID: 881596936}
@@ -1057,10 +1057,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 926794485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5882ed66ea655445b0609bf00dbb3a2, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checker: {fileID: 1283716792}
+  triggeredGameObject: {fileID: 926794485}
+  StaredMaterial: {fileID: 2100000, guid: f6e1d1bf510cd9b48819306f7d52b901, type: 2}
+  speed: 0.5
 --- !u!114 &926794491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,12 +1071,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 926794485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5882ed66ea655445b0609bf00dbb3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggeredGameObject: {fileID: 926794485}
-  StaredMaterial: {fileID: 2100000, guid: f6e1d1bf510cd9b48819306f7d52b901, type: 2}
-  speed: 0.5
+  checker: {fileID: 1283716792}
 --- !u!114 &926794492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1098,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1283716793}
   - 114: {fileID: 1283716792}
+  - 82: {fileID: 1283716794}
+  - 114: {fileID: 1283716795}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1129,6 +1131,11 @@ MonoBehaviour:
   is2ndBlueSeen: 0
   is2ndYellowSeen: 0
   start2ndGroup: 0
+  audioSource: {fileID: 1283716794}
+  levelIntro: {fileID: 8300000, guid: 809a227a84c8e4845a03476866850581, type: 3}
+  firstDone: {fileID: 8300000, guid: ba90989daa4ba456d8ad3c107f4922b9, type: 3}
+  secondDone: {fileID: 8300000, guid: 1e5b527a9def64c98926e4cbf75c10d5, type: 3}
+  exit: {fileID: 8300000, guid: 232e6e46709e04ad7a5adfefbde264b8, type: 3}
 --- !u!4 &1283716793
 Transform:
   m_ObjectHideFlags: 0
@@ -1141,6 +1148,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!82 &1283716794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283716791}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &1283716795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283716791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af76ed5e8928a5f4ca7c6748417432d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: ab0713ea10bd57445bd57dd28a9a82bb, type: 3}
+  fadeSpeed: 0.25
 --- !u!1 &1341281194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,8 +1274,8 @@ GameObject:
   - 65: {fileID: 1463688762}
   - 23: {fileID: 1463688761}
   - 114: {fileID: 1463688767}
-  - 114: {fileID: 1463688766}
   - 114: {fileID: 1463688765}
+  - 114: {fileID: 1463688766}
   m_Layer: 0
   m_Name: 1stLevelYellow
   m_TagString: Untagged
@@ -1266,7 +1360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463688760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredGameObject: {fileID: 1463688760}
@@ -1328,6 +1422,7 @@ GameObject:
   - 54: {fileID: 1482411788}
   - 114: {fileID: 1482411782}
   - 114: {fileID: 1482411790}
+  - 114: {fileID: 1482411791}
   - 114: {fileID: 1482411789}
   m_Layer: 0
   m_Name: 2ndLevelYellow
@@ -1453,7 +1548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482411781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcefe393b4e4264a90f8c52279ffb4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b28b5de05ec05488ecb696841e5805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredGameObject: {fileID: 1482411781}
@@ -1473,6 +1568,18 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1482411791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482411781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d609c0725c7f6914cb4d1286a7399a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checker: {fileID: 1283716792}
 --- !u!1 &1487645360
 GameObject:
   m_ObjectHideFlags: 0
