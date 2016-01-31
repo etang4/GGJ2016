@@ -185,23 +185,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 4
   rotationSpeed: 1
-  numOfWaypoints: 4
-  curWaypoint: 0
-  target: {x: 0, y: 0, z: 0}
-  target1: {x: 0, y: 0, z: 0}
-  numOfWaypoints1: 2
-  curWaypoint1: 0
   moveDirection: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   checker: {fileID: 218959375}
+  numOfWaypoints: 1
+  curWaypoint: 0
+  target: {x: 0, y: 0, z: 0}
   Beacons:
   - {fileID: 1621142131}
-  - {fileID: 982111558}
-  - {fileID: 195827189}
-  - {fileID: 1948383531}
+  numOfWaypoints1: 2
+  curWaypoint1: 0
+  target1: {x: 0, y: 0, z: 0}
   Beacons1:
   - {fileID: 1996506372}
   - {fileID: 1552780356}
+  numOfWaypoints2: 3
+  curWaypoint2: 0
+  target2: {x: 0, y: 0, z: 0}
+  Beacons2:
+  - {fileID: 982111558}
+  - {fileID: 195827189}
+  - {fileID: 1948383531}
 --- !u!54 &50904423
 Rigidbody:
   m_ObjectHideFlags: 0
