@@ -7,7 +7,6 @@ public class StareTrigger : MonoBehaviour {
 
     private Material defaultMaterial;
     public Material StaredMaterial;
-
     private bool hasLookedAtBefore;
     private bool isStaring;
     private float startTime;

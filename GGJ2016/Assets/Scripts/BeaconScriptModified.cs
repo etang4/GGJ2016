@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BeaconScript : MonoBehaviour {
+public class BeaconScriptModified : MonoBehaviour {
 
     public bool isFacing;
     public bool isMoving;
-	
+
+	bool firstMoveDone = false;
+	bool secondMoveDone = false;
+
         // Use this for initialization
 	void Start () {
         isFacing = false;
@@ -16,6 +19,10 @@ public class BeaconScript : MonoBehaviour {
 	void Update () {
 	    
 	}
+
+	//void EyeActivated () {
+	//	isMoving = true;
+	//}
 
     public bool getIsFacing() 
     {
