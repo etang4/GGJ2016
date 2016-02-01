@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Eric's Test/Eye Test Eric.unity
+- path: Assets/Angels Scene/Scene.unity
   isLoaded: 1
   isActive: 1
