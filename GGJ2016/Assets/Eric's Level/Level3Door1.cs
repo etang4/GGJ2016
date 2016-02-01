@@ -12,6 +12,12 @@ public class Level3Door1 : MonoBehaviour {
     public bool doneRotating;
     public bool isWalking;
 
+<<<<<<< HEAD
+=======
+    public AudioSource audioSource;
+    public AudioClip dejavu;
+
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
     private float threshold = 0.2f;
 
 
@@ -26,6 +32,13 @@ public class Level3Door1 : MonoBehaviour {
 	void Update () {
 	    if (triggered)
         {
+<<<<<<< HEAD
+=======
+            
+            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
             if (!isWalking)
             {
                 Vector3 targetDir = beacons[currentlyWalkingTo].transform.position - player.transform.position;
@@ -34,18 +47,33 @@ public class Level3Door1 : MonoBehaviour {
             }
             else
             {
+<<<<<<< HEAD
                 if(Vector3.Distance(beacons[currentlyWalkingTo].transform.position, player.transform.position) < threshold)
+=======
+                
+                if (Vector3.Distance(player.transform.position, beacons[currentlyWalkingTo].transform.position) < threshold)
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
                 {
                     isWalking = false;
                     currentlyWalkingTo++;
                     if(currentlyWalkingTo >= beacons.Length)
                     {
                         triggered = false;
+<<<<<<< HEAD
+=======
+                        //Audio Here
+                        //LoadLevel
+                        StartCoroutine("FadeOut");
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
                     }
                 }
                 else
                 {
+<<<<<<< HEAD
                     Vector3.MoveTowards(player.transform.position, beacons[currentlyWalkingTo].transform.position, speed * Time.deltaTime);
+=======
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, beacons[currentlyWalkingTo].transform.position, speed * Time.deltaTime);
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
                 }
             }
             //check if rotation has stopped
@@ -59,5 +87,18 @@ public class Level3Door1 : MonoBehaviour {
     void EyeActivated()
     {
         triggered = true;
+<<<<<<< HEAD
+=======
+        audioSource.clip = dejavu;
+        audioSource.Play();
+    }
+
+    IEnumerator FadeOut()
+    {
+        float fadeTime = GameObject.Find("Player").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        Application.LoadLevel(4);
+        Debug.Log("Faded Out");
+>>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
     }
 }
