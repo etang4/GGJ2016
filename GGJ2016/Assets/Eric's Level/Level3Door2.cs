@@ -3,17 +3,6 @@ using System.Collections;
 
 public class Level3Door2 : MonoBehaviour {
 
-<<<<<<< HEAD
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-=======
     public GameObject[] beacons;
     public float speed = 5f;
     public float RotationSpeed = 0.3f;
@@ -77,5 +66,4 @@ public class Level3Door2 : MonoBehaviour {
     {
         triggered = true;
     }
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
 }

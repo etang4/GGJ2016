@@ -74,12 +74,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Assets\Eric&apos;s Level\GameManagerEricLevel.cs" />
-    <Compile Include="Assets\Eric&apos;s Level\Level3Door1.cs" />
-    <Compile Include="Assets\Eric&apos;s Level\Level3Door2.cs" />
-    <Compile Include="Assets\Eric&apos;s Level\Rotator.cs" />
-=======
     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\BeaconScriptAlex.cs" />
     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\ColorGame.cs" />
     <Compile Include="Assets\Alex&apos;s Stuff\Scripts\EnemyController.cs" />
@@ -105,7 +99,6 @@
     <Compile Include="Assets\Eric&apos;s Level\Rotator.cs" />
     <Compile Include="Assets\Eric&apos;s Level\WindowTrigger.cs" />
     <Compile Include="Assets\Eric&apos;s Test\DetectClosedEyes.cs" />
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
     <Compile Include="Assets\Eric&apos;s Test\StareTrigger.cs" />
     <Compile Include="Assets\Eric&apos;s Test\TestScript.cs" />
     <Compile Include="Assets\EyeXDemos\ActivatableGUI\Scripts\ActivatableMenuItems.cs" />
@@ -142,12 +135,6 @@
     <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\PointVisualizerBase.cs" />
     <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\ChangeTextureOnPresenceChanged.cs" />
     <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\UserPresenceTitleGui.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\BeaconScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-  </ItemGroup>
-  <ItemGroup>
-=======
     <Compile Include="Assets\GameMusic.cs" />
     <Compile Include="Assets\Scripts\BeaconScript.cs" />
     <Compile Include="Assets\Scripts\BeaconScriptModified.cs" />
@@ -159,16 +146,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Alex&apos;s Stuff\CartoonBusinessZombie\ReadMe.txt" />
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
     <None Include="Assets\Eric&apos;s Level\Wispy Sky\ReadMe.txt" />
     <None Include="Assets\EyeXDemos\Skybox.shader" />
     <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
     <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-<<<<<<< HEAD
-=======
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />

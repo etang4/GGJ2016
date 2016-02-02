@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Eric's Test/Eye Test Eric.unity
-=======
     path: Assets/Alex's Stuff/Title.unity
   - enabled: 1
     path: Assets/Alex's Stuff/IntroRoom.unity
@@ -20,4 +17,3 @@ EditorBuildSettings:
     path: Assets/Eric's Level/Level 3.unity
   - enabled: 1
     path: Assets/Alex's Stuff/EndingRoom.unity
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3

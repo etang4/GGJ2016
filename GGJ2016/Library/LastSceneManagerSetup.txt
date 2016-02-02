@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Eric's Level/Level 3.unity
-=======
-- path: Assets/Angels Scene/Scene.unity
->>>>>>> 9ecf4ecf469e56176c648faa301153717903dad3
   isLoaded: 1
   isActive: 1
